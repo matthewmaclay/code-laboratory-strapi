@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "courses",
+  "info": {
+    "name": "Course"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "age": {
+      "type": "string"
+    },
+    "complexity": {
+      "type": "string"
+    },
+    "lessons": {
+      "collection": "lesson"
+    }
+  }
+}
